@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
+import AddItemDialog from './AddItemDialog';
 import { Grid, Typography, Button } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
@@ -24,14 +25,8 @@ const Header = props => {
             Thành viên
           </Typography>
         </Grid>
-        <Grid item>
-          <Button
-            color="primary"
-            variant="contained"
-            style={{ marginRight: '10px' }}
-          >
-            Thêm thành viên
-          </Button>
+        <Grid item style={{ display: 'flex' }}>
+          <AddItemDialog />
           <Button color="primary" variant="contained">
             Thêm thành viên từ Excel
           </Button>

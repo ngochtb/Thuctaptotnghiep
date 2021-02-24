@@ -42,7 +42,7 @@ const LoginForm = props => {
 
   const classes = useStyles();
   const router = useRouter();
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const [formState, setFormState] = useState({
     isValid: false,

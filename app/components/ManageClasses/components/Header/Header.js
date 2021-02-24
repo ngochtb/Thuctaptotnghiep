@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
 import { Grid, Typography, Button } from '@material-ui/core';
-
+import AddItemDialog from './AddItemDialog';
 const useStyles = makeStyles(() => ({
   root: {},
 }));
@@ -25,13 +25,14 @@ const Header = props => {
           </Typography>
         </Grid>
         <Grid item>
-          <Button
+          <AddItemDialog />
+          {/* <Button
             color="primary"
             variant="contained"
             style={{ marginRight: '10px' }}
           >
             Thêm lớp học
-          </Button>
+          </Button> */}
           {/* <Button color="primary" variant="contained">
             Thêm thành viên từ Excel
           </Button> */}

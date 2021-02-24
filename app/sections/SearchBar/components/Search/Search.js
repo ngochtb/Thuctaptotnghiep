@@ -26,6 +26,8 @@ const useStyles = makeStyles(theme => ({
   },
   searchButton: {
     marginLeft: theme.spacing(2),
+    fontSize: 12,
+    height: 42,
   },
   field: {
     marginTop: 0,
@@ -33,6 +35,8 @@ const useStyles = makeStyles(theme => ({
   },
   formGroup: {
     padding: theme.spacing(2, 0),
+    marginLeft: 10,
+    width: 200,
   },
 }));
 
@@ -78,7 +82,7 @@ const Search = props => {
         <TextField
           className={classes.field}
           fullWidth
-          label="Payment status"
+          label="Khóa"
           margin="dense"
           name="paymentStatus"
           onChange={event =>

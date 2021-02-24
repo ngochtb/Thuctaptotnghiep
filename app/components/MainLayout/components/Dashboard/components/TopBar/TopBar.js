@@ -241,14 +241,16 @@ const TopBar = props => {
               <NotificationsIcon />
             </Badge>
           </IconButton> */}
-          <Button
-            className={classes.logoutButton}
-            color="inherit"
-            onClick={handleLogout}
-          >
-            <InputIcon className={classes.logoutIcon} />
-            Sign out
-          </Button>
+          <RouterLink to="/auth/login">
+            <Button
+              className={classes.logoutButton}
+              color="inherit"
+              onClick={handleLogout}
+            >
+              <InputIcon className={classes.logoutIcon} />
+              Sign out
+            </Button>
+          </RouterLink>
         </Hidden>
 
         <Hidden lgUp>
